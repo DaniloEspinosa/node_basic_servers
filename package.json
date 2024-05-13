@@ -1,0 +1,24 @@
+{
+  "name": "node_basic_servers",
+  "version": "1.0.0",
+  "description": "Varios servidores NODE sencillos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniloEspinosa/node_basic_servers.git"
+  },
+  "keywords": [
+    "node",
+    "basic",
+    "server"
+  ],
+  "author": "Danilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniloEspinosa/node_basic_servers/issues"
+  },
+  "homepage": "https://github.com/DaniloEspinosa/node_basic_servers#readme"
+}

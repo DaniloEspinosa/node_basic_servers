@@ -1,10 +1,11 @@
-const http = require('node:http')
+// const http = require('node:http')  // Esto es en caso de importar todo http
+const { createServer } = require('node:http')  // Aqui solo llamamos la funcionalidad que necesitamos de http
 
 const puerto = process.argv[2] || 0
 
-const server = http.createServer((req, res) => {
+// const server = http.createServer((req, res) => {  // Esto es en caso de importar todo http
+const server = createServer((req, res) => {
 
-    
     let body = ""
     let title = ""
     if (req.url === "/") {
@@ -27,6 +28,17 @@ const server = http.createServer((req, res) => {
         <head>
         <meta charset="utf-8">
         <title>${title}</title>
+        <style>
+         body{
+            background-color: green;
+            font-family: Arial, helvetica, sans-serif;
+            text-align: center;
+            color: white;
+         }
+         a {
+            color: white;
+         }
+        </style>
         </head>
         <body>
         ${body}
